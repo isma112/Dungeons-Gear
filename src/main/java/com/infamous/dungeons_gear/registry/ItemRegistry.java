@@ -52,19 +52,19 @@ public class ItemRegistry {
 
     //DPS 9.6 (19.2), crits once per 2.5 (1.25) seconds
     public static final RegistryObject<Item> DAGGER = ITEMS.register("dagger",
-            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.4f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), false));
+            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.25f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), false));
     public static final RegistryObject<Item> FANG_OF_FROST = ITEMS.register("fang_of_frost",
-            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.4f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
+            () -> new DaggerItem(ToolMaterialList.METAL, 4, (2.25f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
     public static final RegistryObject<Item> MOON_DAGGER = ITEMS.register("moon_dagger",
-            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.4f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
+            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.0f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), false));
     public static final RegistryObject<Item> SHEAR_DAGGER = ITEMS.register("shear_dagger",
-            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.4f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
+            () -> new DaggerItem(ToolMaterialList.METAL, 3, (2.0f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), false));
   
     //DPS 10 (20), crits once per 3 (1.5) seconds
     public static final RegistryObject<Item> SICKLE = ITEMS.register("sickle",
-            () -> new SickleItem(ToolMaterialList.METAL, 4, (2.0f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), false));
+            () -> new SickleItem(ToolMaterialList.METAL, 5, (1.0f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), false));
     public static final RegistryObject<Item> NIGHTMARES_BITE = ITEMS.register("nightmares_bite",
-            () -> new SickleItem(ToolMaterialList.METAL, 4, (2.0f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
+            () -> new SickleItem(ToolMaterialList.METAL, 5, (1.8f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
     public static final RegistryObject<Item> THE_LAST_LAUGH = ITEMS.register("the_last_laugh",
             () -> new SickleItem(ToolMaterialList.METAL, 4, (2.0f-4.0f), new Item.Properties().tab(DungeonsGear.MELEE_WEAPON_GROUP), true));
   
@@ -80,27 +80,27 @@ public class ItemRegistry {
 
     //DPS 8, crits once per 3.5 seconds
     public static final RegistryObject<Item> RAPIER = ITEMS.register("rapier",
-            () -> new RapierItem(ToolMaterialList.METAL, 1, (4.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new RapierItem(ToolMaterialList.METAL, 2, (3.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> BEE_STINGER = ITEMS.register("bee_stinger",
-            () -> new RapierItem(ToolMaterialList.METAL, 1, (4.0f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new RapierItem(ToolMaterialList.METAL, 4, (2.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> FREEZING_FOIL = ITEMS.register("freezing_foil",
-            () -> new RapierItem(ToolMaterialList.METAL, 1, (4.0f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new RapierItem(ToolMaterialList.METAL, 4, (4.0f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 9.1, crits once per 1.53 seconds
     public static final RegistryObject<Item> SOUL_SCYTHE = ITEMS.register("soul_scythe",
-            () -> new SoulScytheItem(ToolMaterialList.METAL, 6, (1.3f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new SoulScytheItem(ToolMaterialList.METAL, 4, (1.5f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> FROST_SCYTHE = ITEMS.register("frost_scythe",
-            () -> new SoulScytheItem(ToolMaterialList.METAL, 6, (1.3f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new SoulScytheItem(ToolMaterialList.METAL, 10, (1.3f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> JAILORS_SCYTHE = ITEMS.register("jailors_scythe",
-            () -> new SoulScytheItem(ToolMaterialList.METAL, 6, (1.3f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new SoulScytheItem(ToolMaterialList.METAL, 8, (1.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
 
     //DPS 7.2, crits once per 1.11 seconds
     public static final RegistryObject<Item> CUTLASS = ITEMS.register("cutlass",
-            () -> new CutlassItem(ToolMaterialList.METAL, 3, (1.8f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new CutlassItem(ToolMaterialList.METAL, 6, (0.7f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> DANCERS_SWORD = ITEMS.register("dancers_sword",
-            () -> new CutlassItem(ToolMaterialList.METAL, 3, (1.8f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new CutlassItem(ToolMaterialList.METAL, 7, (1.39f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> NAMELESS_BLADE = ITEMS.register("nameless_blade",
-            () -> new CutlassItem(ToolMaterialList.METAL, 3, (1.8f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new CutlassItem(ToolMaterialList.METAL, 7, (1.8f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> SPARKLER = ITEMS.register("sparkler",
             () -> new CutlassItem(ToolMaterialList.METAL, 3, (1.8f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
@@ -114,7 +114,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> DIAMOND_SWORD = ITEMS.register("diamond_sword",
             () -> new DungeonsSwordItem(ToolMaterialList.DIAMOND, 6, (1.6f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> HAWKBRAND = ITEMS.register("hawkbrand",
-            () -> new DungeonsSwordItem(ToolMaterialList.METAL, 5, (1.6f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new DungeonsSwordItem(ToolMaterialList.METAL, 6, (1.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> SINISTER_SWORD = ITEMS.register("sinister_sword",
             () -> new DungeonsSwordItem(ToolMaterialList.METAL, 5, (1.6f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
@@ -138,77 +138,77 @@ public class ItemRegistry {
     public static final RegistryObject<Item> GOLD_AXE = ITEMS.register("gold_axe",
             () -> new DungeonsAxeItem(ToolMaterialList.GOLD, 7, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> FIREBRAND = ITEMS.register("firebrand",
-            () -> new DungeonsAxeItem(ToolMaterialList.METAL, 9, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new DungeonsAxeItem(ToolMaterialList.METAL, 2, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> HIGHLAND_AXE = ITEMS.register("highland_axe",
-            () -> new DungeonsAxeItem(ToolMaterialList.METAL, 9, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new DungeonsAxeItem(ToolMaterialList.METAL, 9, (0.7f-4.0f), MELEE_WEAPON_PROPERTIES, false));
 
     //DPS 9, crits once per 1.1 seconds, disables shields
     public static final RegistryObject<Item> DOUBLE_AXE = ITEMS.register("double_axe",
             () -> new DoubleAxeItem(ToolMaterialList.METAL, 8, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> CURSED_AXE = ITEMS.register("cursed_axe",
-            () -> new DoubleAxeItem(ToolMaterialList.METAL, 8, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new DoubleAxeItem(ToolMaterialList.METAL, 9, (1.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> WHIRLWIND = ITEMS.register("whirlwind",
-            () -> new DoubleAxeItem(ToolMaterialList.METAL, 8, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new DoubleAxeItem(ToolMaterialList.METAL, 14, (0.7f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 9.8, crits once per 2.1 seconds, disables shields
     public static final RegistryObject<Item> MACE = ITEMS.register("mace",
-            () -> new MaceItem(ToolMaterialList.METAL, 6, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new MaceItem(ToolMaterialList.METAL, 4, (1.6f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> FLAIL = ITEMS.register("flail",
-            () -> new MaceItem(ToolMaterialList.METAL, 6, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new MaceItem(ToolMaterialList.METAL, 6, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> SUNS_GRACE = ITEMS.register("suns_grace",
-            () -> new MaceItem(ToolMaterialList.METAL, 6, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new MaceItem(ToolMaterialList.METAL, 7, (1.6f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 8.8, crits once per 0.9 seconds, disables shields
     public static final RegistryObject<Item> GREAT_HAMMER = ITEMS.register("great_hammer",
-            () -> new GreatHammerItem(ToolMaterialList.METAL, 7, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new GreatHammerItem(ToolMaterialList.METAL, 9, (0.7f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> HAMMER_OF_GRAVITY = ITEMS.register("hammer_of_gravity",
             () -> new GreatHammerItem(ToolMaterialList.METAL, 7, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> STORMLANDER = ITEMS.register("stormlander",
-            () -> new GreatHammerItem(ToolMaterialList.METAL, 7, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new GreatHammerItem(ToolMaterialList.METAL, 8, (1.6f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 11.2, crits once per 2.1 seconds
     public static final RegistryObject<Item> KATANA = ITEMS.register("katana",
-            () -> new KatanaItem(ToolMaterialList.METAL, 7, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new KatanaItem(ToolMaterialList.METAL, 4, (1.5f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> DARK_KATANA = ITEMS.register("dark_katana",
-            () -> new KatanaItem(ToolMaterialList.METAL, 7, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new KatanaItem(ToolMaterialList.METAL, 9, (1.7f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> MASTERS_KATANA = ITEMS.register("masters_katana",
-            () -> new KatanaItem(ToolMaterialList.METAL, 7, (1.4f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new KatanaItem(ToolMaterialList.METAL, 8, (1.2f-4.0f), MELEE_WEAPON_PROPERTIES, false));
 
     //DPS 7.2, crits once per 1.25 seconds
     public static final RegistryObject<Item> SOUL_KNIFE = ITEMS.register("soul_knife",
-            () -> new SoulKnifeItem(ToolMaterialList.METAL, 8, (0.8f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new SoulKnifeItem(ToolMaterialList.METAL, 7, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> ETERNAL_KNIFE = ITEMS.register("eternal_knife",
-            () -> new SoulKnifeItem(ToolMaterialList.METAL, 8, (0.8f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new SoulKnifeItem(ToolMaterialList.METAL, 9, (1.3f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> TRUTHSEEKER = ITEMS.register("truthseeker",
-            () -> new SoulKnifeItem(ToolMaterialList.METAL, 8, (0.8f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new SoulKnifeItem(ToolMaterialList.METAL, 8, (1.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
 
     //DPS 9.6, crits once per 3.3 seconds
     public static final RegistryObject<Item> CLAYMORE = ITEMS.register("claymore",
-            () -> new ClaymoreItem(ToolMaterialList.METAL, 11, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, false));
+            () -> new ClaymoreItem(ToolMaterialList.METAL, 9, (1.0f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> BROADSWORD = ITEMS.register("broadsword",
-            () -> new ClaymoreItem(ToolMaterialList.METAL, 12, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new ClaymoreItem(ToolMaterialList.METAL, 7, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> HEARTSTEALER = ITEMS.register("heartstealer",
-            () -> new ClaymoreItem(ToolMaterialList.METAL, 11, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new ClaymoreItem(ToolMaterialList.METAL, 12, (1.1f-4.0f), MELEE_WEAPON_PROPERTIES, true));
     public static final RegistryObject<Item> GREAT_AXEBLADE = ITEMS.register("great_axeblade",
-            () -> new ClaymoreItem(ToolMaterialList.METAL, 11, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new ClaymoreItem(ToolMaterialList.METAL, 11, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> FROST_SLAYER = ITEMS.register("frost_slayer",
-            () -> new ClaymoreItem(ToolMaterialList.METAL, 12, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
+            () -> new ClaymoreItem(ToolMaterialList.METAL, 13, (0.9f-4.0f), MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 8.4, crits once per 2.14 seconds, +2 reach
     public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",
-            () -> new SpearItem(ToolMaterialList.METAL, 5, (1.4f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, false));
+            () -> new SpearItem(ToolMaterialList.METAL, 5, (1.0f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> FORTUNE_SPEAR = ITEMS.register("fortune_spear",
-            () -> new SpearItem(ToolMaterialList.METAL, 5, (1.4f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, true));
+            () -> new SpearItem(ToolMaterialList.METAL, 6.5, (1.0f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> WHISPERING_SPEAR = ITEMS.register("whispering_spear",
-            () -> new SpearItem(ToolMaterialList.METAL, 5, (1.4f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, true));
+            () -> new SpearItem(ToolMaterialList.METAL, 8, (1.4f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 9.6, crits once per 2.5 seconds, +2 reach
     public static final RegistryObject<Item> GLAIVE = ITEMS.register("glaive",
-            () -> new GlaiveItem(ToolMaterialList.METAL, 7, (1.2f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, false));
+            () -> new GlaiveItem(ToolMaterialList.METAL, 6, (1.0f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> GRAVE_BANE = ITEMS.register("grave_bane",
-            () -> new GlaiveItem(ToolMaterialList.METAL, 7, (1.2f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, true));
+            () -> new GlaiveItem(ToolMaterialList.METAL, 7, (1.2f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, false));
     public static final RegistryObject<Item> VENOM_GLAIVE = ITEMS.register("venom_glaive",
-            () -> new GlaiveItem(ToolMaterialList.METAL, 7, (1.2f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, true));
+            () -> new GlaiveItem(ToolMaterialList.METAL, 10, (1.0f-4.0f), 2.0F, MELEE_WEAPON_PROPERTIES, true));
 
     //DPS 7, crits once per second, +2 reach
     public static final RegistryObject<Item> WHIP = ITEMS.register("whip",
@@ -254,28 +254,28 @@ public class ItemRegistry {
     public static final RegistryObject<Item> TWIN_BOW = ITEMS.register("twin_bow",
             () -> new DungeonsBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
     public static final RegistryObject<Item> HAUNTED_BOW = ITEMS.register("haunted_bow",
-            () -> new DungeonsBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
+            () -> new DungeonsBowItem(RANGED_WEAPON_PROPERTIES, 26.0F, true));
 
     public static final RegistryObject<Item> SOUL_BOW = ITEMS.register("soul_bow",
-            () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, false));
+            () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 8.0F, false));
     public static final RegistryObject<Item> BOW_OF_LOST_SOULS = ITEMS.register("bow_of_lost_souls",
-            () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
+            () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 12.0F, true));
     public static final RegistryObject<Item> NOCTURNAL_BOW = ITEMS.register("nocturnal_bow",
             () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
     public static final RegistryObject<Item> SHIVERING_BOW = ITEMS.register("shivering_bow",
-            () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
+            () -> new SoulBowItem(RANGED_WEAPON_PROPERTIES, 26.0F, true));
 
     public static final RegistryObject<Item> POWER_BOW = ITEMS.register("power_bow",
             () -> new PowerBowItem(RANGED_WEAPON_PROPERTIES, 25.0F, false));
     public static final RegistryObject<Item> ELITE_POWER_BOW = ITEMS.register("elite_power_bow",
             () -> new PowerBowItem(RANGED_WEAPON_PROPERTIES, 25.0F, true));
     public static final RegistryObject<Item> SABREWING = ITEMS.register("sabrewing",
-            () -> new PowerBowItem(RANGED_WEAPON_PROPERTIES, 25.0F, true));
+            () -> new PowerBowItem(RANGED_WEAPON_PROPERTIES, 26.0F, true));
 
     public static final RegistryObject<Item> LONGBOW = ITEMS.register("longbow",
             () -> new LongbowItem(RANGED_WEAPON_PROPERTIES, 25.0F, false));
     public static final RegistryObject<Item> GUARDIAN_BOW = ITEMS.register("guardian_bow",
-            () -> new LongbowItem(RANGED_WEAPON_PROPERTIES, 25.0F, true));
+            () -> new LongbowItem(RANGED_WEAPON_PROPERTIES, 8.0F, true));
     public static final RegistryObject<Item> RED_SNAKE = ITEMS.register("red_snake",
             () -> new LongbowItem(RANGED_WEAPON_PROPERTIES, 25.0F, true));
 
@@ -289,7 +289,7 @@ public class ItemRegistry {
             () -> new HuntingBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
 
     public static final RegistryObject<Item> SHORTBOW = ITEMS.register("shortbow",
-            () -> new ShortbowItem(RANGED_WEAPON_PROPERTIES, 15.0F, false));
+            () -> new ShortbowItem(RANGED_WEAPON_PROPERTIES, 10.0F, false));
     public static final RegistryObject<Item> MECHANICAL_SHORTBOW = ITEMS.register("mechanical_shortbow",
             () -> new ShortbowItem(RANGED_WEAPON_PROPERTIES, 15.0F, true));
     public static final RegistryObject<Item> PURPLE_STORM = ITEMS.register("purple_storm",
@@ -307,16 +307,16 @@ public class ItemRegistry {
             () -> new TrickbowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
 
     public static final RegistryObject<Item> SNOW_BOW = ITEMS.register("snow_bow",
-            () -> new SnowBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, false));
+            () -> new SnowBowItem(RANGED_WEAPON_PROPERTIES, 8.0F, false));
     public static final RegistryObject<Item> WINTERS_TOUCH = ITEMS.register("winters_touch",
-            () -> new SnowBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
+            () -> new SnowBowItem(RANGED_WEAPON_PROPERTIES, 12.0F, true));
 
     public static final RegistryObject<Item> WIND_BOW = ITEMS.register("wind_bow",
             () -> new WindBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, false));
     public static final RegistryObject<Item> BURST_GALE_BOW = ITEMS.register("burst_gale_bow",
             () -> new WindBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
     public static final RegistryObject<Item> ECHO_OF_THE_VALLEY = ITEMS.register("echo_of_the_valley",
-            () -> new WindBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, true));
+            () -> new WindBowItem(RANGED_WEAPON_PROPERTIES, 12.0F, true));
 
     public static final RegistryObject<Item> TWISTING_VINE_BOW = ITEMS.register("twisting_vine_bow",
             () -> new TwistingVineBowItem(RANGED_WEAPON_PROPERTIES, 20.0F, false));
@@ -334,26 +334,26 @@ public class ItemRegistry {
     public static final RegistryObject<Item> BUTTERFLY_CROSSBOW = ITEMS.register("butterfly_crossbow",
             () -> new RapidCrossbowItem(RANGED_WEAPON_PROPERTIES, 20, true));
     public static final RegistryObject<Item> AUTO_CROSSBOW = ITEMS.register("auto_crossbow",
-            () -> new RapidCrossbowItem(RANGED_WEAPON_PROPERTIES, 20, true));
+            () -> new RapidCrossbowItem(RANGED_WEAPON_PROPERTIES, 12, true));
 
     public static final RegistryObject<Item> AZURE_SEEKER = ITEMS.register("azure_seeker",
-            () -> new DungeonsCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
+            () -> new DungeonsCrossbowItem(RANGED_WEAPON_PROPERTIES, 12, true));
     public static final RegistryObject<Item> THE_SLICER = ITEMS.register("the_slicer",
-            () -> new DungeonsCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
+            () -> new DungeonsCrossbowItem(RANGED_WEAPON_PROPERTIES, 12, true));
 
     public static final RegistryObject<Item> HEAVY_CROSSBOW = ITEMS.register("heavy_crossbow",
             () -> new HeavyCrossbowItem(RANGED_WEAPON_PROPERTIES, 30, false));
     public static final RegistryObject<Item> DOOM_CROSSBOW = ITEMS.register("doom_crossbow",
-            () -> new HeavyCrossbowItem(RANGED_WEAPON_PROPERTIES, 30, true));
+            () -> new HeavyCrossbowItem(RANGED_WEAPON_PROPERTIES, 19, true));
     public static final RegistryObject<Item> SLAYER_CROSSBOW = ITEMS.register("slayer_crossbow",
-            () -> new HeavyCrossbowItem(RANGED_WEAPON_PROPERTIES, 30, true));
+            () -> new HeavyCrossbowItem(RANGED_WEAPON_PROPERTIES, 19, true));
 
     public static final RegistryObject<Item> SOUL_CROSSBOW = ITEMS.register("soul_crossbow",
             () -> new SoulCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, false));
     public static final RegistryObject<Item> FERAL_SOUL_CROSSBOW = ITEMS.register("feral_soul_crossbow",
             () -> new SoulCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
     public static final RegistryObject<Item> VOIDCALLER = ITEMS.register("voidcaller",
-            () -> new SoulCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
+            () -> new SoulCrossbowItem(RANGED_WEAPON_PROPERTIES, 19, true));
 
     public static final RegistryObject<Item> SCATTER_CROSSBOW = ITEMS.register("scatter_crossbow",
             () -> new ScatterCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, false));
@@ -363,7 +363,7 @@ public class ItemRegistry {
             () -> new ScatterCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
 
     public static final RegistryObject<Item> EXPLODING_CROSSBOW = ITEMS.register("exploding_crossbow",
-            () -> new ExplodingCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, false));
+            () -> new ExplodingCrossbowItem(RANGED_WEAPON_PROPERTIES, 23, false));
     public static final RegistryObject<Item> FIREBOLT_THROWER = ITEMS.register("firebolt_thrower",
             () -> new ExplodingCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
     public static final RegistryObject<Item> IMPLODING_CROSSBOW = ITEMS.register("imploding_crossbow",
@@ -374,7 +374,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> CORRUPTED_CROSSBOW = ITEMS.register("corrupted_crossbow",
             () -> new BurstCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
     public static final RegistryObject<Item> SOUL_HUNTER_CROSSBOW = ITEMS.register("soul_hunter_crossbow",
-            () -> new BurstCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
+            () -> new BurstCrossbowItem(RANGED_WEAPON_PROPERTIES, 30, true));
 
     public static final RegistryObject<Item> DUAL_CROSSBOW = ITEMS.register("dual_crossbow",
             () -> new DualCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, false));
@@ -387,7 +387,7 @@ public class ItemRegistry {
             () -> new CogCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
 
     public static final RegistryObject<Item> HARPOON_CROSSBOW = ITEMS.register("harpoon_crossbow",
-            () -> new HarpoonCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, false));
+            () -> new HarpoonCrossbowItem(RANGED_WEAPON_PROPERTIES, 30, false));
     public static final RegistryObject<Item> NAUTICAL_CROSSBOW = ITEMS.register("nautical_crossbow",
             () -> new HarpoonCrossbowItem(RANGED_WEAPON_PROPERTIES, 25, true));
 
